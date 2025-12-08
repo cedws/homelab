@@ -1,0 +1,25 @@
+# Packer cache
+packer_cache/
+.packer.d/
+
+# Build artifacts
+*.box
+output-*/
+crash.log
+
+# Variables file with credentials
+variables.pkrvars.hcl
+
+# Packer logs
+packer-*.log
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/

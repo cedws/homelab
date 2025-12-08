@@ -1,0 +1,10 @@
+# Build Windows 11 base template
+
+build:
+    packer build -var-file="../../variables.pkrvars.hcl" windows11-base.pkr.hcl
+
+validate:
+    packer validate -var-file="../../variables.pkrvars.hcl" windows11-base.pkr.hcl
+
+fmt:
+    packer fmt windows11-base.pkr.hcl

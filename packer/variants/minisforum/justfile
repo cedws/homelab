@@ -1,0 +1,10 @@
+# Build Windows 11 minisforum template
+
+build:
+    packer build -var-file="../../variables.pkrvars.hcl" windows11-minisforum.pkr.hcl
+
+validate:
+    packer validate -var-file="../../variables.pkrvars.hcl" windows11-minisforum.pkr.hcl
+
+fmt:
+    packer fmt windows11-minisforum.pkr.hcl
