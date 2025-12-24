@@ -14,7 +14,8 @@ winget install --silent --accept-source-agreements --accept-package-agreements `
     Hawaii_Beach.TinyNvidiaUpdateChecker `
     Valve.Steam `
     Discord.Discord `
-    Mozilla.Firefox
+    Mozilla.Firefox `
+    EpicGames.EpicGamesLauncher
 
 Write-Host "Applications installed"
 
