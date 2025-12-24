@@ -79,7 +79,7 @@ variable "ssh_password" {
 variable "windows_image_index" {
   type        = string
   description = "Windows image index from ISO"
-  default     = "7"
+  default     = "6"
 }
 
 variable "windows_computer_name" {
