@@ -85,7 +85,7 @@ variable "windows_image_index" {
 variable "windows_computer_name" {
   type        = string
   description = "Computer name"
-  default     = "WIN11-TEMPLATE"
+  default     = "Windows11"
 }
 
 variable "windows_time_zone" {
