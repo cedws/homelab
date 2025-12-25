@@ -8,6 +8,11 @@ Start-Transcript -Path "C:\packer\configure-windows.log" -Append
 
 Write-Host "Configuring Windows..."
 
+# Enable Hyper-V
+Write-Host "Enabling Hyper-V..."
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All -NoRestart
+Write-Host "Hyper-V enabled"
+
 # Disable OneDrive
 Remove-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Run" -Name "OneDrive" -Force -ErrorAction SilentlyContinue
 
